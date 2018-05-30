@@ -1,0 +1,32 @@
+<div class="page-layout blank p-24">
+  <button mat-stroked-button color="warn">Delete</button>
+  <div fxLayout="column" fxLayoutAlign="space-around center" >
+      
+    <ul>
+      <fuse-programs></fuse-programs>
+      <fuse-programs-list></fuse-programs-list>
+      <div fxLayout="column">
+        <h4>Product Information</h4>
+
+        <mat-form-field>
+          <input matInput placeholder="Program Name">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="App ID">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Version Number">
+        </mat-form-field>
+      </div>
+    
+        <p>
+          <fuse-manager></fuse-manager>
+        </p>
+        <h4>Special Updates</h4>
+          <fuse-specials></fuse-specials>
+      </ul>
+
+      <button mat-stroked-button color="accent">Save Changes</button>
+    </div>
+
+</div>
