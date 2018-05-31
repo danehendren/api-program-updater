@@ -5,7 +5,7 @@
 <img src="/src/assets/images/manageversion.png /> 
 <img src="/src/assets/images/specialupdates.png />
 
-![Alt text](assets/images/addproduct.png?raw=true "Title")
+![Alt text](/src/assets/images/addproduct.png?raw=true "Title")
 
 
 <h5>Comments</h5>
