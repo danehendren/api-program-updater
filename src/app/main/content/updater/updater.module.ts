@@ -1,4 +1,4 @@
-import { NgModule, Component} from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { TranslateModule } from '@ngx-translate/core';
@@ -18,7 +18,7 @@ import { FuseProgramsModule } from '../programs/programs.module';
 
 const routes = [
     {
-        path     : 'updater',
+        path: 'updater',
         component: FuseUpdaterComponent
     }
 ];
@@ -27,7 +27,7 @@ const routes = [
     declarations: [
         FuseUpdaterComponent
     ],
-    imports     : [
+    imports: [
         RouterModule.forChild(routes),
         TranslateModule,
         FuseSharedModule,
@@ -39,11 +39,10 @@ const routes = [
         MatFormFieldModule,
         MatInputModule
     ],
-    exports     : [
+    exports: [
         FuseUpdaterComponent
     ]
 })
 
-export class FuseUpdaterModule
-{
+export class FuseUpdaterModule {
 }

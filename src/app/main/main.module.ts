@@ -18,7 +18,7 @@ import { FuseMainComponent } from './main.component';
     declarations: [
         FuseMainComponent,
     ],
-    imports     : [
+    imports: [
         RouterModule,
 
         MatSidenavModule,
@@ -36,11 +36,10 @@ import { FuseMainComponent } from './main.component';
         FuseNavbarModule,
         FuseQuickPanelModule,
         FuseToolbarModule
-        ],
-    exports     : [
+    ],
+    exports: [
         FuseMainComponent
     ]
 })
-export class FuseMainModule
-{
+export class FuseMainModule {
 }

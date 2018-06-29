@@ -25,7 +25,7 @@ import { FuseProgramsModule } from 'app/main/content/programs/programs.module';
     declarations: [
         AppComponent
     ],
-    imports     : [
+    imports: [
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule,
@@ -40,10 +40,9 @@ import { FuseProgramsModule } from 'app/main/content/programs/programs.module';
         AppRoutingModule,
         FuseProgramsModule
     ],
-    bootstrap   : [
+    bootstrap: [
         AppComponent
     ]
 })
-export class AppModule
-{
+export class AppModule {
 }

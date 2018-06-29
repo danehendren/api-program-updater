@@ -1,1 +1,61 @@
-<h1>Programm Detail Component....</h1>
+<div *ngIf='(program$ | async) as program' class="page-layout blank p-24">
+
+    <button mat-mini-fab color="primary" [routerLink]="['/programs']">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+
+
+    <div fxLayout="column" fxLayoutAlign="space-around center">
+        <ul>
+            <div class="individual-program-details">
+                <h4>Product Information</h4>
+                <button mat-icon-button (click)="openDialog()">
+                    <mat-icon class='warn-fg'>delete</mat-icon>
+
+                </button>
+
+                <!-- 
+
+                <form [formGroup]="detailForm">
+                    <label>
+                        <input formControlName="name" placeholder="name">
+                    </label>
+                    <label>
+                        <input formControlName="version" placeholder=" version">
+                    </label>
+                    <label>
+                        <input formControlName="applicationId" placeholder=" appid">
+                    </label>
+                </form>
+ -->
+
+
+
+                <mat-form-field>
+                    <input matInput placeholder="Program Name" [(ngModel)]='program.name' required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="App ID" [(ngModel)]='program.applicationId' required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Version Number" [(ngModel)]='program.version' required>
+                </mat-form-field>
+
+
+
+
+            </div>
+            <button mat-raised-button color="accent" (click)='save(program)'>Save</button>
+            <br>
+            <p class='warn-fg' *ngIf="showError">*Please fill out the required fields with proper values </p>
+
+            <h4>Special Updates</h4>
+            <fuse-specials></fuse-specials>
+        </ul>
+    </div>
+
+</div>
+
+<div *ngIf='!(program$ | async)' class="page-layout blank p-24">
+    <span> no program send by service </span>
+</div>

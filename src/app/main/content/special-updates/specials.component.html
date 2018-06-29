@@ -1,9 +1,12 @@
-<button mat-stroked-button (click)="addSpecialUpdates()">Add</button>
+<button mat-mini-fab color="accent" (click)="addSpecialUpdates()">
+    <mat-icon>add</mat-icon>
+</button>
+
 
 <div fxLayout="row" fxLayoutAlign="center center" *ngFor='let update of specialUpdates'>
     <button mat-icon-button (click)="deleteSpecialUpdate(update)">
         <mat-icon class='warn-fg'>delete</mat-icon>
-        </button>
+    </button>
 
     <mat-form-field>
         <input matInput placeholder="Promo Tag" [(ngModel)]='update.promoTag'>

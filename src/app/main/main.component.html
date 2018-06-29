@@ -9,21 +9,15 @@
         <!-- / TOOLBAR: Above -->
 
         <!-- NAVBAR: Top -->
-        <fuse-navbar layout="horizontal"
-                     class="top-navbar" fxHide fxShow.gt-md
-                     [ngClass]="fuseSettings.colorClasses.navbar"
-                     *ngIf="fuseSettings.layout.navigation === 'top'">
+        <fuse-navbar layout="horizontal" class="top-navbar" fxHide fxShow.gt-md [ngClass]="fuseSettings.colorClasses.navbar" *ngIf="fuseSettings.layout.navigation === 'top'">
         </fuse-navbar>
         <!-- / NAVBAR: Top -->
 
         <div id="wrapper">
 
             <!-- NAVBAR: Left -->
-            <fuse-sidebar [name]="'navbar'"
-                          [folded]="fuseSettings.layout.navigationFolded"
-                          [lockedOpen]="'gt-md'"
-                          class="left-navbar" [ngClass]="fuseSettings.colorClasses.navbar"
-                          *ngIf="fuseSettings.layout.navigation === 'left' || fuseSettings.layout.navigation === 'top'">
+            <fuse-sidebar [name]="'navbar'" [folded]="fuseSettings.layout.navigationFolded" [lockedOpen]="'gt-md'" class="left-navbar"
+                [ngClass]="fuseSettings.colorClasses.navbar" *ngIf="fuseSettings.layout.navigation === 'left' || fuseSettings.layout.navigation === 'top'">
                 <fuse-navbar layout="vertical"></fuse-navbar>
             </fuse-sidebar>
             <!-- / NAVBAR: Left -->
@@ -47,11 +41,8 @@
             </div>
 
             <!-- NAVBAR: Right -->
-            <fuse-sidebar [name]="'navbar'" [align]="'right'"
-                          [folded]="fuseSettings.layout.navigationFolded"
-                          [lockedOpen]="'gt-md'"
-                          class="right-navbar" [ngClass]="fuseSettings.colorClasses.navbar"
-                          *ngIf="fuseSettings.layout.navigation === 'right'">
+            <fuse-sidebar [name]="'navbar'" [align]="'right'" [folded]="fuseSettings.layout.navigationFolded" [lockedOpen]="'gt-md'"
+                class="right-navbar" [ngClass]="fuseSettings.colorClasses.navbar" *ngIf="fuseSettings.layout.navigation === 'right'">
                 <fuse-navbar layout="vertical"></fuse-navbar>
             </fuse-sidebar>
             <!-- / NAVBAR: Right -->

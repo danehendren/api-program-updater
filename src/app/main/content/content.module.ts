@@ -9,8 +9,8 @@ import { FuseContentComponent } from 'app/main/content/content.component';
 @NgModule({
     declarations: [
         FuseContentComponent
-          ],
-    imports     : [
+    ],
+    imports: [
         RouterModule,
         FuseSharedModule,
     ],
@@ -18,6 +18,5 @@ import { FuseContentComponent } from 'app/main/content/content.component';
         FuseContentComponent
     ]
 })
-export class FuseContentModule
-{
+export class FuseContentModule {
 }

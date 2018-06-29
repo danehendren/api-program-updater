@@ -29,7 +29,7 @@ export class FuseSpecialsComponent implements OnInit {
       version: 1,
       url: ''
     });
-    
+
   }
 
   deleteSpecialUpdate(update: SpecialUpdate) {

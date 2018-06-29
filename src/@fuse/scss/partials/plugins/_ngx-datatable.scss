@@ -1,8 +1,6 @@
 .ngx-datatable {
-
     &.material {
         @include mat-elevation(4);
-
         .empty-row {
             display: flex;
             align-items: center;
@@ -10,11 +8,9 @@
             height: 56px;
             padding: 0 24px;
         }
-
         .datatable-header {
             border: none;
             min-height: 48px;
-
             .datatable-header-cell {
                 display: inline-flex;
                 align-items: center;
@@ -24,30 +20,23 @@
                 padding: 0 24px;
             }
         }
-
         .datatable-body {
             display: flex;
             flex: 1 0 auto;
-
             .datatable-scroll {
                 display: flex;
-                flex-direction: column;
-                width: 100% !important;
+                flex-direction: column; // width: 100% !important;
             }
-
             .datatable-row-left,
             .datatable-row-center,
             .datatable-row-right {
                 min-height: 48px;
             }
-
             .datatable-row-wrapper {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-
                 &:first-child {
                     border-top: 1px solid rgba(0, 0, 0, 0.12);
                 }
-
                 .datatable-body-cell {
                     display: inline-flex;
                     align-items: center;
@@ -59,35 +48,26 @@
                 }
             }
         }
-
         .datatable-footer {
             border: none;
             min-height: 56px;
-
             .datatable-footer-inner {
                 padding: 0 24px;
-
                 @include media-breakpoint('sm') {
                     flex-direction: column;
                     padding: 16px 0;
                     height: auto !important;
-
                     .datatable-pager {
                         margin: 0 !important;
                     }
                 }
-
                 .page-count {
                     padding: 0;
                 }
-
                 .datatable-pager {
                     margin: 0 0 0 24px;
-
                     .pager {
-
                         li {
-
                             a {
                                 text-decoration: none !important;
                             }
@@ -118,48 +98,63 @@
 .datatable-icon-filter:before {
     content: "filter_list";
 }
+
 .datatable-icon-collapse:before {
     content: "unfold_less";
 }
+
 .datatable-icon-expand:before {
     content: "unfold_more";
 }
+
 .datatable-icon-close:before {
     content: "close";
 }
+
 .datatable-icon-up:before {
     content: "keyboard_arrow_up";
 }
+
 .datatable-icon-down:before {
     content: "keyboard_arrow_down";
 }
+
 .datatable-icon-sort:before {
     content: "sort";
 }
+
 .datatable-icon-done:before {
     content: "done";
 }
+
 .datatable-icon-done-all:before {
     content: "done_all";
 }
+
 .datatable-icon-search:before {
     content: "search";
 }
+
 .datatable-icon-pin:before {
     content: "lock";
 }
+
 .datatable-icon-add:before {
     content: "add";
 }
+
 .datatable-icon-left:before {
     content: "chevron_left";
 }
+
 .datatable-icon-right:before {
     content: "chevron_right";
 }
+
 .datatable-icon-skip:before {
     content: "skip_next";
 }
+
 .datatable-icon-prev:before {
     content: "skip_previous";
 }
